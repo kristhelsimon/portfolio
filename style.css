@@ -1,6 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  overflow-x: hidden;
   color: #03045e;
   background: #fbf8cc;
 }
@@ -13,6 +25,7 @@ body {
   width: 100%;
   z-index: 1000;
   background: #fbf8cc;
+  box-shadow: 0 1px 0 rgba(3, 4, 94, 0.08);
 }
 
 .navbar a {
@@ -838,6 +851,220 @@ body.lightbox-open {
   .lightbox-content {
     animation: none;
     transition: none;
+  }
+}
+
+/* Responsive layout polish */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 112px;
+  }
+
+  .navbar {
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    padding: 11px 16px 12px;
+  }
+
+  .navbar .logo {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .navbar nav {
+    display: flex;
+    width: 100%;
+    max-width: 390px;
+    justify-content: space-between;
+    padding-right: 0 !important;
+  }
+
+  .navbar a {
+    margin: 0;
+    padding: 4px 7px;
+    font-size: 0.78rem;
+    font-weight: 500;
+  }
+
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+    padding: 140px 20px 42px !important;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-text > h3 {
+    font-size: 1rem !important;
+  }
+
+  .hero-text > h1 {
+    max-width: 590px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    font-size: clamp(2.05rem, 9vw, 3rem) !important;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+  }
+
+  .hero-image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 28px;
+  }
+
+  .hero-image > div {
+    width: 310px !important;
+    height: 310px !important;
+  }
+
+  .hero-image img {
+    left: 16px !important;
+    top: 18px !important;
+    width: 260px !important;
+    height: 260px !important;
+    padding-left: 0 !important;
+    object-fit: cover;
+  }
+
+  .hero-image > div > div {
+    left: 32px !important;
+    top: 32px !important;
+    width: 260px !important;
+    height: 260px !important;
+  }
+
+  #about {
+    max-width: 720px !important;
+    margin: 0 auto !important;
+    padding: 66px 22px 40px !important;
+  }
+
+  #about h2,
+  #contact h2 {
+    margin-top: 0;
+    font-size: clamp(2.25rem, 11vw, 3.2rem) !important;
+    line-height: 1.1;
+  }
+
+  #about p {
+    font-size: 0.96rem !important;
+    line-height: 1.75 !important;
+  }
+
+  .certifications {
+    margin: 0 !important;
+    padding: 52px 18px 62px;
+  }
+
+  .certifications h1 {
+    margin: 0 0 30px !important;
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .badge-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 145px));
+    gap: 24px 18px;
+  }
+
+  .badge-container a {
+    display: block;
+  }
+
+  .badge-container a img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  #work.work-section {
+    padding-top: 64px;
+  }
+
+  .work-heading {
+    margin-bottom: 30px;
+  }
+
+  .work-heading > p:last-child {
+    font-size: 0.95rem;
+  }
+
+  .project-card {
+    border-radius: 18px;
+  }
+
+  .project-meta {
+    justify-content: flex-start;
+  }
+
+  #contact {
+    padding: 62px 20px 58px !important;
+  }
+
+  #contact p,
+  #contact a {
+    overflow-wrap: anywhere;
+  }
+
+  footer {
+    padding: 18px 16px;
+    font-size: 0.78rem;
+  }
+
+  .tall-preview .lightbox-content {
+    padding-bottom: 74px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .navbar a {
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+  }
+
+  .hero-image > div {
+    width: 280px !important;
+    height: 285px !important;
+  }
+
+  .hero-image img {
+    width: 238px !important;
+    height: 238px !important;
+  }
+
+  .hero-image > div > div {
+    left: 28px !important;
+    width: 238px !important;
+    height: 238px !important;
+  }
+
+  .badge-container {
+    grid-template-columns: repeat(2, minmax(0, 125px));
+  }
+
+  .project-content,
+  .automation-grid .project-content,
+  .project-list .project-content {
+    padding: 19px;
   }
 }
 
