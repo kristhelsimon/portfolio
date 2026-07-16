@@ -1,0 +1,6 @@
+Drop every screenshot for this project in this folder.
+
+Then list each filename in projects/projects.js under the project's images array.
+
+Example:
+images: ["homepage.png", "details.png", "mobile.png"]

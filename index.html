@@ -28,7 +28,7 @@
         Hello, I’m Kristhel,
     </h3>
     <h1 style="font-size: 3.5rem; font-weight: bold; margin-top: 0; margin-bottom: 0;">
-        Automation Specialist & Shopify Developer
+        Automation Specialist & Website Developer
     </h1>
     <h3 style="font-weight: 300; font-stretch: expanded; font-size: 1.4rem; line-height: 1.2; margin-bottom: 1.5rem;">
         based in the Philippines.
@@ -61,7 +61,7 @@
 <section id="about" style="padding: 15%; padding-top: 5%; max-width: auto; margin: auto; text-align: center; margin-bottom: -15%;">
     <h2 style="font-size: 3.5rem; margin-bottom: 20px;color: #f5ee84;">About Me.</h2>
     <p style="font-size: 1.1rem; line-height: 1.6;">
-        I’m Kristhel, an <strong>Automation Specialist</strong> and <strong>Shopify Developer</strong> passionate about
+        I’m Kristhel, an <strong>Automation Specialist</strong> and <strong>Website Developer</strong> passionate about
         building efficient, streamlined solutions for online businesses.
         With a background in Computer Science and certifications in Make.com (Basics to Advanced), I create end-to-end
         automation workflows, integrate APIs, and develop Shopify solutions that save time and boost productivity. I also work
@@ -94,7 +94,128 @@
 </section>
 
 
-<section id="work">
+<section id="work" class="work-section">
+    <div class="work-heading">
+        <p class="section-kicker">Selected work</p>
+        <h2>Projects built to make business simpler.</h2>
+        <p>Explore my website development and automation work.</p>
+    </div>
+
+    <div class="work-tabs" role="tablist" aria-label="Project categories">
+        <button class="work-tab active" id="websites-tab" role="tab" aria-selected="true"
+            aria-controls="websites-panel" data-tab="websites">
+            <span class="tab-icon" aria-hidden="true">&#9671;</span>
+            Website Projects
+            <span class="tab-count">01</span>
+        </button>
+        <button class="work-tab" id="automations-tab" role="tab" aria-selected="false"
+            aria-controls="automations-panel" data-tab="automations" tabindex="-1">
+            <span class="tab-icon" aria-hidden="true">&#9889;</span>
+            Automations
+            <span class="tab-count">03</span>
+        </button>
+    </div>
+
+    <div class="work-panels">
+        <div class="work-panel active" id="websites-panel" role="tabpanel" aria-labelledby="websites-tab">
+            <div class="project-list" id="additional-websites"></div>
+            <article class="project-card project-card-featured">
+                <button class="project-image image-zoom" type="button"
+                    data-full="projects/work/foreverlily-webdev/foreverlily.de - product page.png"
+                    aria-label="Open a larger preview of the ForeverLily website">
+                    <img src="projects/work/foreverlily-webdev/foreverlily.de - product page.png"
+                        alt="ForeverLily Shopify mobile product page preview">
+                    <span class="image-link">View larger <span aria-hidden="true">&#8599;</span></span>
+                </button>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span>Shopify Development</span>
+                        <span>Germany · B2C</span>
+                    </div>
+                    <h3>ForeverLily E-commerce Website</h3>
+                    <p>Customized a responsive Shopify storefront, integrated third-party apps to improve the checkout journey,
+                        and optimized performance for a faster, more polished shopping experience.</p>
+                    <a class="project-live-link" href="https://foreverlily.de" target="_blank" rel="noopener noreferrer">
+                        Visit live website <span aria-hidden="true">&#8599;</span>
+                    </a>
+                    <div class="project-tags" aria-label="Technologies used">
+                        <span>Shopify</span><span>Liquid</span><span>Responsive UI</span><span>Performance</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="work-panel" id="automations-panel" role="tabpanel" aria-labelledby="automations-tab" hidden>
+            <div class="project-list" id="additional-automations"></div>
+            <div class="automation-grid">
+                <article class="project-card">
+                    <button class="project-image image-zoom" type="button" data-full="images/conversion_sheet.png"
+                        data-images='["images/conversion_sheet.png","images/conversion_googlesheet.svg"]'
+                        aria-label="Open a larger preview of the funnel tracking automation">
+                        <img src="images/conversion_sheet.png" alt="E-commerce funnel tracking automation scenario">
+                        <span class="image-count">2 images</span>
+                        <span class="image-link">View larger <span aria-hidden="true">&#8599;</span></span>
+                    </button>
+                    <div class="project-content">
+                        <div class="project-meta"><span>Analytics Automation</span><span>ForeverLily</span></div>
+                        <h3>E-commerce Funnel Tracking</h3>
+                        <p>A daily workflow that combines Google Analytics funnel data with Shopify purchase metrics in Google
+                            Sheets, giving the client accurate reporting without manual work.</p>
+                        <div class="project-tags"><span>Make.com</span><span>Shopify</span><span>Google Analytics</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <button class="project-image image-zoom" type="button" data-full="images/draftorder_scenario.png"
+                        data-images='["images/draftorder_scenario.png","images/order_confirmation.svg"]'
+                        aria-label="Open a larger preview of the order processing workflow">
+                        <img src="images/draftorder_scenario.png" alt="Multi-sheet Shopify order processing workflow">
+                        <span class="image-count">2 images</span>
+                        <span class="image-link">View larger <span aria-hidden="true">&#8599;</span></span>
+                    </button>
+                    <div class="project-content">
+                        <div class="project-meta"><span>Order Operations</span><span>Frizbee Ceramics</span></div>
+                        <h3>Multi-Sheet Order Processing</h3>
+                        <p>A 51-module workflow that categorizes Shopify draft orders and routes production, confirmation, and
+                            stock data to the correct Google Sheets in real time.</p>
+                        <div class="project-tags"><span>Make.com</span><span>Shopify</span><span>Google Sheets</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <button class="project-image image-zoom" type="button" data-full="images/POS_scenario.svg"
+                        aria-label="Open a larger preview of the Shopify POS automation">
+                        <img src="images/POS_scenario.svg" alt="Shopify POS to Pipedrive CRM automation">
+                        <span class="image-link">View larger <span aria-hidden="true">&#8599;</span></span>
+                    </button>
+                    <div class="project-content">
+                        <div class="project-meta"><span>CRM Automation</span><span>Private Client</span></div>
+                        <h3>Shopify POS to Pipedrive CRM</h3>
+                        <p>A customer and deal-management workflow that syncs in-store orders, prevents duplicate deals, and
+                            creates timely follow-up activities for the sales team.</p>
+                        <div class="project-tags"><span>Make.com</span><span>Shopify POS</span><span>Pipedrive</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="image-lightbox" id="image-lightbox" role="dialog" aria-modal="true" aria-label="Project image preview"
+    aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">&times;</button>
+    <button class="lightbox-arrow lightbox-previous" type="button" aria-label="View previous image">&#8592;</button>
+    <div class="lightbox-content">
+        <img src="" alt="">
+        <div class="lightbox-details">
+            <p class="lightbox-caption"></p>
+            <span class="lightbox-counter"></span>
+        </div>
+    </div>
+    <button class="lightbox-arrow lightbox-next" type="button" aria-label="View next image">&#8594;</button>
+</div>
+
+<section class="legacy-work" aria-hidden="true">
     <h2 style="font-size: 3.5rem; margin-bottom: 20px;color: #f5ee84;">Work.</h2>
 <div class="project left">
     <div class="flip-card" onclick="this.classList.toggle('flip')">
@@ -208,6 +329,196 @@
     <footer>
         © 2025 Kristhel Simon. All rights reserved.
     </footer>
+
+    <script src="projects/projects.js"></script>
+    <script>
+        function createProjectCard(project) {
+            const article = document.createElement('article');
+            article.className = 'project-card';
+
+            const projectImages = (project.images || [project.image])
+                .filter(Boolean)
+                .map((fileName) => project.folder ? `${project.folder}/${fileName}` : fileName);
+
+            const imageButton = document.createElement('button');
+            imageButton.className = 'project-image image-zoom';
+            imageButton.type = 'button';
+            imageButton.dataset.full = projectImages[0];
+            imageButton.dataset.images = JSON.stringify(projectImages);
+            imageButton.setAttribute('aria-label', `Open a larger preview of ${project.title}`);
+
+            const image = document.createElement('img');
+            image.src = projectImages[0];
+            image.alt = project.imageAlt || `Preview of ${project.title}`;
+            image.loading = 'lazy';
+
+            const zoomLabel = document.createElement('span');
+            zoomLabel.className = 'image-link';
+            zoomLabel.innerHTML = 'View larger <span aria-hidden="true">&#8599;</span>';
+            imageButton.appendChild(image);
+
+            if (projectImages.length > 1) {
+                const imageCount = document.createElement('span');
+                imageCount.className = 'image-count';
+                imageCount.textContent = `${projectImages.length} images`;
+                imageButton.appendChild(imageCount);
+            }
+
+            imageButton.appendChild(zoomLabel);
+
+            const content = document.createElement('div');
+            content.className = 'project-content';
+
+            const meta = document.createElement('div');
+            meta.className = 'project-meta';
+            [project.type, project.client].filter(Boolean).forEach((text) => {
+                const item = document.createElement('span');
+                item.textContent = text;
+                meta.appendChild(item);
+            });
+
+            const title = document.createElement('h3');
+            title.textContent = project.title;
+            const description = document.createElement('p');
+            description.textContent = project.description;
+            content.append(meta, title, description);
+
+            if (project.liveUrl) {
+                const liveLink = document.createElement('a');
+                liveLink.className = 'project-live-link';
+                liveLink.href = project.liveUrl;
+                liveLink.target = '_blank';
+                liveLink.rel = 'noopener noreferrer';
+                liveLink.innerHTML = 'Visit live website <span aria-hidden="true">&#8599;</span>';
+                content.appendChild(liveLink);
+            }
+
+            if (project.tags?.length) {
+                const tags = document.createElement('div');
+                tags.className = 'project-tags';
+                project.tags.forEach((tag) => {
+                    const item = document.createElement('span');
+                    item.textContent = tag;
+                    tags.appendChild(item);
+                });
+                content.appendChild(tags);
+            }
+
+            article.append(imageButton, content);
+            return article;
+        }
+
+        [...(window.additionalProjects || [])].reverse().forEach((project) => {
+            const list = document.querySelector(`#additional-${project.category}`);
+            if (list) list.appendChild(createProjectCard(project));
+        });
+
+        const tabs = [...document.querySelectorAll('.work-tab')];
+        const panels = [...document.querySelectorAll('.work-panel')];
+
+        tabs.forEach((tab) => {
+            const panel = document.querySelector(`#${tab.dataset.tab}-panel`);
+            const count = panel?.querySelectorAll('.project-card').length || 0;
+            tab.querySelector('.tab-count').textContent = String(count).padStart(2, '0');
+        });
+
+        function selectWorkTab(selectedTab) {
+            tabs.forEach((tab) => {
+                const isSelected = tab === selectedTab;
+                tab.classList.toggle('active', isSelected);
+                tab.setAttribute('aria-selected', isSelected);
+                tab.tabIndex = isSelected ? 0 : -1;
+            });
+
+            panels.forEach((panel) => {
+                const isSelected = panel.id === `${selectedTab.dataset.tab}-panel`;
+                panel.hidden = !isSelected;
+                panel.classList.toggle('active', isSelected);
+            });
+        }
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => selectWorkTab(tab));
+            tab.addEventListener('keydown', (event) => {
+                if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+                event.preventDefault();
+                const direction = event.key === 'ArrowRight' ? 1 : -1;
+                const nextTab = tabs[(index + direction + tabs.length) % tabs.length];
+                selectWorkTab(nextTab);
+                nextTab.focus();
+            });
+        });
+
+        const lightbox = document.querySelector('#image-lightbox');
+        const lightboxImage = lightbox.querySelector('img');
+        const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+        const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+        const lightboxClose = lightbox.querySelector('.lightbox-close');
+        const lightboxPrevious = lightbox.querySelector('.lightbox-previous');
+        const lightboxNext = lightbox.querySelector('.lightbox-next');
+        let lastZoomButton = null;
+        let lightboxImages = [];
+        let lightboxIndex = 0;
+        let lightboxAlt = '';
+
+        lightboxImage.addEventListener('load', () => {
+            const isTallScreenshot = lightboxImage.naturalHeight / lightboxImage.naturalWidth > 2;
+            lightbox.classList.toggle('tall-preview', isTallScreenshot);
+        });
+
+        function showLightboxImage(index) {
+            lightboxIndex = (index + lightboxImages.length) % lightboxImages.length;
+            lightboxImage.src = lightboxImages[lightboxIndex];
+            lightboxImage.alt = `${lightboxAlt} (${lightboxIndex + 1} of ${lightboxImages.length})`;
+            lightboxCaption.textContent = lightboxAlt;
+            lightboxCounter.textContent = `${lightboxIndex + 1} / ${lightboxImages.length}`;
+            const hasGallery = lightboxImages.length > 1;
+            lightboxPrevious.hidden = !hasGallery;
+            lightboxNext.hidden = !hasGallery;
+            lightboxCounter.hidden = !hasGallery;
+        }
+
+        function openLightbox(button) {
+            const sourceImage = button.querySelector('img');
+            lastZoomButton = button;
+            lightboxImages = button.dataset.images
+                ? JSON.parse(button.dataset.images)
+                : [button.dataset.full || sourceImage.src];
+            lightboxAlt = sourceImage.alt;
+            showLightboxImage(0);
+            lightbox.classList.add('open');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('lightbox-open');
+            lightboxClose.focus();
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            lightbox.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('lightbox-open');
+            lightboxImage.src = '';
+            lightbox.classList.remove('tall-preview');
+            lightboxImages = [];
+            lastZoomButton?.focus();
+        }
+
+        document.querySelectorAll('.image-zoom').forEach((button) => {
+            button.addEventListener('click', () => openLightbox(button));
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrevious.addEventListener('click', () => showLightboxImage(lightboxIndex - 1));
+        lightboxNext.addEventListener('click', () => showLightboxImage(lightboxIndex + 1));
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) closeLightbox();
+        });
+        document.addEventListener('keydown', (event) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (event.key === 'Escape') closeLightbox();
+            if (event.key === 'ArrowLeft' && lightboxImages.length > 1) showLightboxImage(lightboxIndex - 1);
+            if (event.key === 'ArrowRight' && lightboxImages.length > 1) showLightboxImage(lightboxIndex + 1);
+        });
+    </script>
 
 </body>
 
