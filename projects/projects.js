@@ -85,5 +85,25 @@ window.additionalProjects = [
     imageAlt: "Activate Law Gmail client intake automation workflow",
     description: "Built for Activate Law, an Ohio-based law firm, this workflow processes incoming client intake emails from Gmail, notifies the team in Slack, and uses Claude to generate a clear case summary. It then creates a structured task in ClickUp, organizes the matter in Dropbox, and uploads every email attachment so the legal team receives a complete, actionable intake package without manual data entry.",
     tags: ["Make.com", "Gmail", "Claude AI", "ClickUp", "Dropbox", "Slack"]
+  },
+  {
+    category: "websites",
+    title: "Meal Plan Haven",
+    type: "Full-Stack Meal Planning Platform",
+    client: "Meal Plan Haven · Australia",
+    folder: "projects/work/mph-webdev",
+    images: [
+      "mph - homepage .png",
+      "mph - calculatorpage.png",
+      "mph -mealgeneratorpage.png",
+      "mph -Buiilmymealpage.png",
+      "mph -clientspage.png",
+      "mph - adminpage.png",
+      "mph - systempage.png",
+      "mph - profilepage.png"
+    ],
+    imageAlt: "Meal Plan Haven meal planning platform homepage",
+    description: "Meal Plan Haven is an Australian web platform that helps coaches create and customize meal plans from a professional food database. It includes calorie calculations, automated meal-plan generation, manual meal building, multi-client assignment, client management, administration, system controls, and user profiles. The platform integrates Stripe for payments and subscriptions, with Firebase and Google Cloud services supporting its application infrastructure.",
+    tags: ["Firebase", "Stripe", "Google Cloud", "Meal Planning", "Client Management"]
   }
 ];
